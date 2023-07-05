@@ -1,0 +1,206 @@
+/* 
+    Document   : format_tra.css
+    Created on : 22.08.2013, 09:06:30
+    Author     : neugi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    color: #4b4b4b;
+    font-size: 1em;
+    font-family: Arial,sans-serif;
+    padding: 0;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+    border: 0;
+}
+
+a {
+    border: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.header {
+    margin: 0 0 20px 0;
+    padding: 10px;
+}
+
+.logo, 
+.CSSimagebox_adv {
+    float: left;
+    margin-right: 15px;
+}
+
+.CSSimagebox_adv {
+    text-align: right;
+}
+
+.paymentSymbo {
+    background: url(../images/schloss.png) no-repeat top left;
+    padding: 10px 0 0 60px;
+    min-height: 48px;
+}
+
+.paymentSymbo h1 {
+    margin: 0 0 0 0;
+    padding: 0;
+    font-size: 1.2em;
+    font-family: TeleNormUltra, Arial,sans-serif;
+    font-weight: normal;
+}
+
+.paymentSymbo h2 {
+    font-size: 1em;
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: normal;
+}
+
+.paymentSymbo h2 img {
+    height: 15px;
+    margin: 0 0 0 5px;
+    position: relative;
+    top: 4px;
+}
+
+.details {
+    padding: 15px 0px;
+}
+
+.CSSadviceofchargebox_default {
+    padding: 10px 20px 5px 20px;
+    background: #f6f6f6;
+}
+
+.CSS_3rdpartyproducttext_adv {
+    text-align: center;
+}
+
+.CSSlegalbox_default {
+    padding: 10px 20px 5px 10px;
+}
+
+.tanBox {
+    background: #fff;
+    padding: 5px 10px;
+    margin: 0px 0 0 0;
+    font-size: 0.8em;
+}
+
+.tanForm {
+    margin: 10px 0;
+}
+
+.tanForm input {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    border: 1px solid #d6d6d6;
+    height: 28px;
+    width: 99%;
+}
+
+.CSSadviceofchargebox_default .CSSbuttonbox5 {
+    margin: 20px 0 0 0;
+}
+
+.CSSadviceofchargebox_default .CSSbuttonbox5 input {
+
+    font-size: 1.2em;
+    line-height:30px;
+    height:30px;
+    text-decoration: none; 
+    position: relative;
+    padding: 0 20px;
+    margin:0;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background: #cc0000;
+    border: 1px solid #cc0000;
+    width: 100%;
+}
+
+.tanForm .CSSbuttonbox5 a:hover{
+    background: #cc0000;
+}
+
+.CSSfooterbox_default {
+    margin: 0px 0 0 15px;
+    position: relative;
+}
+
+.CSSfooterbox_default a.redlink {
+    color: #cc0000;
+}
+
+.CSSfooterbox_default a {
+    display: block;
+    padding: 5px;
+    color: #4b4b4b;
+    font-size: 0.8em;
+    margin: 0 0 5px 0;
+}
+
+.detailText {
+    margin: 10px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #ebebeb
+}
+
+.detailText .left{
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.detailText .right {
+} 
+
+div.layer {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    background: #fff;
+    border: 1px solid #cc0000;
+    padding: 20px;
+    margin: 20px;
+    width: 60%;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+div.layer h2 {
+    font-size: 1em;
+}
+
+
+
+div.layer a.close {
+    display: inline-block !important;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+}
+
+div.layer a {
+    display: inline-block;
+    text-transform: none;
+}
+
+.pink {
+    color: #cc0000;
+}

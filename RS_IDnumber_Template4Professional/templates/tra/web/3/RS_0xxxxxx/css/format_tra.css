@@ -1,0 +1,270 @@
+/* 
+    Document   : format_tra.css
+    Created on : 02.10.2018
+    Author     : hirmp
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    color: #4b4b4b;
+    font-size: 1em;
+    font-family: Arial,sans-serif;
+    padding: 0;
+    margin: 10px;
+}
+
+
+
+img {
+    max-width: 100%;
+    border: 0;
+}
+
+a {
+    border: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.header {
+    margin: 0 0 20px 0;
+}
+
+.logo, 
+.CSSimagebox_adv {
+    margin: 0 0 5px 0;
+}
+
+.paymentSymbo {
+    background: url(../images/schloss.png) no-repeat top left;
+    padding: 10px 0 0 60px;
+    min-height: 48px;
+}
+
+.paymentSymbo h1 {
+    margin: 0 0 0 0;
+    padding: 0;
+    font-size: 1.2em;
+    font-family: Arial,sans-serif;
+    font-weight: normal;
+}
+
+.paymentSymbo h2 {
+    font-size: 1em;
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: normal;
+}
+
+.paymentSymbo h2 img {
+    height: 15px;
+    margin: 0 0 0 5px;
+    position: relative;
+    top: 4px;
+}
+
+.details {
+    background: #f6f6f6;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding: 15px 12px;
+}
+
+.CSSadviceofchargebox_default {
+    padding: 0 10px 20px 10x;
+}
+
+.CSSadviceofchargebox_default .left {
+    width: 150px;
+    float: left;
+}
+
+.CSSadviceofchargebox_default .right {
+    width: 60%;
+    float: left;
+    font-weight: bold;
+}
+
+.tanBox {
+    background: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    padding: 15px 10px;
+    margin: 20px 0 0 0;
+}
+
+.tanForm {
+    margin: 10px 0;
+}
+
+.tanForm input {
+    text-transform: uppercase;
+    font-family: Arial,sans-serif;
+    font-size: 1.2em;
+    border: 1px solid #d6d6d6;
+    height: 28px;
+    margin: 0 10px 10px 0;
+    float: left;
+}
+
+.tanForm .CSSbuttonbox5 {
+    text-align: right;
+    float: left;
+    
+}
+
+.tanForm .CSSbuttonbox5 input {
+
+    font-size: 1.4em;
+    line-height:30px;
+    height:30px;
+    text-decoration: none; 
+    position: relative;
+    padding: 0 20px;
+    margin:0;
+    font-family: Arial,sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background: #cc0000;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e20000), to(#ad000c));
+    background: -moz-linear-gradient(#e20000, #ad000c);
+    background: -ms-linear-gradient(#e20000, #ad000c);
+    background: -o-linear-gradient(#e20000, #ad000c);
+    background: linear-gradient(#e20000, #ad000c);
+    -pie-background: linear-gradient(#e20000, #ad000c);
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #cc0000;
+}
+
+.tanForm .CSSbuttonbox5 a:hover{
+    background: #cc0000;
+    background: -webkit-gradient(none);
+    background: -moz-linear-gradient(none);
+    background: -ms-linear-gradient(none);
+    background: -o-linear-gradient(none);
+    background: linear-gradient(none);
+    -pie-background: linear-gradient(none);
+}
+
+
+.CSSfooterbox_default {
+    margin: 30px 0 0 0;
+    position: relative;
+}
+
+.CSSlegalbox_default {
+    font-size: .8em;
+}
+
+.CSSfooterbox_default a.redlink {
+    color: #cc0000;
+}
+
+.CSSfooterbox_default a {
+    display: block;
+    border: 1px solid #d6d6d6;
+    padding: 10px;
+    text-decoration: none;
+    color: #4b4b4b;
+    text-transform: uppercase;
+    font-family: Arial,sans-serif;
+    font-size: 0.8em;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin: 0 0 5px 0;
+}
+
+.detailText {
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #ebebeb
+}
+
+.detailText .left{
+    margin: 0 0 10px 0;
+    /*float: left;*/
+    max-width: 120px;
+    width: 30%;
+    padding: 0 10px 0 0;
+}
+
+.detailText .right {
+    float: left;
+    width: 60%;
+} 
+
+
+div.layer {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    background: #fff;
+    border: 1px solid #cc0000;
+    padding: 20px;
+    margin: 20px;
+    width: 60%;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+div.layer h2 {
+    font-size: 1em;
+}
+
+
+
+div.layer a.close {
+    display: inline-block !important;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+}
+
+div.layer a {
+    display: inline-block;
+    border:0;
+    text-transform: none;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+div.layer a:hover {
+    display: inline-block;
+    border: 0;
+    text-transform: none;
+    color: #cc0000;
+}
+
+.formattingAdditionalData {
+    padding: 10px;
+    margin: 0 0 5px 0;
+}
+
+.pink {
+    color: #cc0000;
+}
