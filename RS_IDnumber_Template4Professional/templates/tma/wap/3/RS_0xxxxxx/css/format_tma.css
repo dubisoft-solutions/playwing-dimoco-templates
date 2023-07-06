@@ -1,207 +1,211 @@
-/* 
-    Document   : format_tma.css
-    Created on : 02.10.2018
-    Author     : hirmp
-    Description:
-        Purpose of the stylesheet follows.
-*/
+@font-face {
+    src: url("Inter-Regular.eot");
+    src: url("Inter-Regular.eot?#iefix") format("embedded-opentype"), url("Inter-Regular.svg#TeleNormReg") format("svg"), url("Inter-Regular.woff") format("woff"), url("Inter-Regular.ttf") format("truetype");
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: normal;
+}
 
-root { 
-    display: block;
+@font-face {
+    src: url("Inter-ExtraBold.eot");
+    src: url("Inter-ExtraBold.eot?#iefix") format("embedded-opentype"), url("Inter-ExtraBold.svg#TeleNormReg") format("svg"), url("Inter-ExtraBold.woff") format("woff"), url("Inter-ExtraBold.ttf") format("truetype");
+    font-family: 'Inter';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.top-nav {
+    padding: 1rem 0;
 }
 
 body {
-    color: #4b4b4b;
-    font-size: 1em;
-    font-family: Arial,sans-serif;
-    padding: 0;
-    margin: 0px;
+    background-color: #EEEFF3;
+    font-family: 'Inter';
 }
 
-img {
-    max-width: 100%;
-    border: 0;
+h3 {
+    font-weight: bold;
+    font-size: .813rem;
+    color: #343434;
 }
 
-a {
-    border: 0;
-}
-
-.clear {
-    clear: both;
-}
-
-.header {
-    margin: 0 0 20px 0;
-    padding: 10px;
-}
-
-.logo, 
-.CSSimagebox_adv {
-    float: left;
-    margin-right: 15px;
-}
-
-.CSSimagebox_adv {
-    text-align: right;
-}
-
-.paymentSymbo {
-    background: url(../images/schloss.png) no-repeat top left;
-    padding: 10px 0 0 60px;
-    min-height: 48px;
-}
-
-.paymentSymbo h1 {
-    margin: 0 0 0 0;
-    padding: 0;
-    font-size: 1.2em;
-    font-family: TeleNormUltra, Arial,sans-serif;
-    font-weight: normal;
-}
-
-.paymentSymbo h2 {
-    font-size: 1em;
-    margin: 0 0 10px;
-    padding: 0;
-    font-weight: normal;
-}
-
-.paymentSymbo h2 img {
-    height: 15px;
-    margin: 0 0 0 5px;
+.banner {
     position: relative;
-    top: 4px;
+    min-height: 138vw;
 }
 
-.details {
-    padding: 15px 0px;
+@media (min-width: 576px) {
+    .banner {
+        min-height: 580px;
+    }
 }
 
-.CSSadviceofchargebox_default {
-    padding: 10px 20px 5px 20px;
-    background: #f6f6f6;
+@media (min-width: 992px) {
+    .banner {
+        min-height: 480px;
+    }
 }
 
-.CSS_3rdpartyproducttext_adv {
+@media (min-width: 1200px) {
+    .banner {
+        min-height: 580px;
+    }
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    position: absolute;
 }
 
-.CSSlegalbox_default {
-    padding: 10px 20px 5px 10px;
+.banner-bg {
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    position: absolute;
+    top: 0;
+    object-fit: contain;
+    z-index: -1;
 }
 
-
-.tanBox {
-    background: #fff;
-    padding: 5px 10px;
-    margin: 0px 0 0 0;
-    font-size: 0.8em;
+@media (min-width: 576px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .banner-bg {
+        object-fit: contain;
+    }
 }
 
-.tanForm {
-    margin: 10px 0;
+.banner-cta-icon {
+    margin: 1rem 0 2rem 0;
 }
 
-.tanForm input {
-    text-transform: uppercase;
-    font-size: 1.2em;
-    border: 1px solid #d6d6d6;
-    height: 28px;
-    width: 99%;
+.banner-text {
+    margin-top: auto;
 }
 
-.CSSadviceofchargebox_default .CSSbuttonbox5 {
-    margin: 20px 0 0 0;
+.responsive-two-columns {
+    display: flex;
 }
 
-.CSSadviceofchargebox_default .CSSbuttonbox5 input {
+.responsive-two-columns>* {
+    font-size: .688rem;
+    color: #A59B9B;
+    text-align: left;
+}
 
-    font-size: 1.2em;
-    line-height:30px;
-    height:30px;
-    text-decoration: none; 
-    position: relative;
-    padding: 0 20px;
-    margin:0;
-    display: block;
+.responsive-two-columns .left {
+    width: 60%;
+}
+
+.responsive-two-columns .right {
+    width: 40%;
+}
+
+.btn {
+    padding: 0;
+}
+
+.btn-success {
+    font-weight: 600;
+    font-size: 1.25rem;
     color: #fff;
+    background: #00B262;
+    box-shadow: 0px 4px 4px #24CB80;
+    border-radius: .625rem;
+    border: none;
+    padding: 1.5rem;
     text-decoration: none;
-    text-align: center;
-    background: #e20074;
-    border: 1px solid #e20074;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 5.125rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.btn-icon-style {
+    position: absolute;
+    right: 0;
+    padding-right: 2.125rem;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.btn-link {
+    font-weight: normal;
+    font-size: .875rem;
+    color: #A59B9B;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.btn-block {
+    display: block;
     width: 100%;
 }
 
-.tanForm .CSSbuttonbox5 a:hover{
-    background: #e20074;
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.CSSfooterbox_default {
-    margin: 0px 0 0 15px;
-    position: relative;
+.text-description {
+    font-weight: 400;
+    font-size: .75rem;
+    text-align: left;
+    color: #A59B9B;
+    margin-bottom: 1rem;
 }
 
-.CSSfooterbox_default a.pinklink {
-	color: #e20074;
+.text-description a {
+    font-weight: 400;
+    font-size: .75rem;
+    color: #A59B9B;
 }
 
-.CSSfooterbox_default a {
-    display: block;
-    padding: 5px;
-    color: #4b4b4b;
-    font-size: 0.8em;
-    margin: 0 0 5px 0;
+.footer {
+    margin-top: auto;
+    margin: auto;
 }
 
-.detailText {
-    margin: 10px;
-    padding: 0 0 10px 0;
-    border-bottom: 1px solid #ebebeb
+.footer .list-inline {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
 }
 
-.detailText .left{
-    margin: 0 0 10px 0;
-    text-align: center;
+.footer .list-inline .list-inline-item {
+    list-style-type: none;
+    padding: 0 12px;
+    border-right: 1px solid #464646;
+    padding-bottom: .25rem;
 }
 
-.detailText .right {
-} 
-
-div.layer {
-    position: absolute;
-    bottom: 0;
-    left: 20%;
-    background: #fff;
-    border: 1px solid #e20074;
-    padding: 20px;
-    margin: 20px;
-    width: 60%;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+.footer .list-inline .list-inline-item:last-child {
+    border-right: none;
 }
 
-div.layer h2 {
-    font-size: 1em;
+.footer .list-inline .list-inline-item.border-right:last-child {
+    border-right: 1px solid #464646;
 }
 
-
-
-div.layer a.close {
-    display: inline-block !important;
-    text-align: center;
-    font-size: 12px;
-    float: right;
-}
-
-div.layer a {
-    display: inline-block;
-    text-transform: none;
-}
-
-.pink {
-    color: #e20074;
+.footer .list-inline .list-inline-item .btn-link {
+    font-weight: normal;
+    font-size: .75rem;
+    color: #838383;
 }
