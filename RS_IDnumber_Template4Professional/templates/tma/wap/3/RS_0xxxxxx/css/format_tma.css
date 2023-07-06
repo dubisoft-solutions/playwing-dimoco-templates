@@ -70,7 +70,7 @@ h3 {
     max-height: 450px;
     position: absolute;
     top: 0;
-    object-fit: contain;
+    object-fit: cover;
     z-index: -1;
 }
 
