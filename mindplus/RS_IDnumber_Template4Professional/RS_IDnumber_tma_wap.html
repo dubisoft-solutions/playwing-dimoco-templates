@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>Playwing Game Store</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="max-age=0" http-equiv="Cache-Control">
+    <meta name="expires" content="0">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta http-equiv="X-Frame-Options" content="deny">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="templates/tma/wap/3/RS_0xxxxxx/css/format_tma.css" media="screen,print">
+    <script type="text/javascript">
+        function isNoIframeOrIframeInMyHost() {
+            // Validation: it must be loaded as the top page, or if it is loaded in an iframe 
+            // then it must be embedded in my own domain.
+            // Info: IF top.location.href is not accessible THEN it is embedded in an iframe 
+            // and the domains are different.
+            var myresult = true;
+            try {
+                var tophref = top.location.href;
+                var tophostname = top.location.hostname.toString();
+                var myhref = location.href;
+                if (tophref === myhref) {
+                    myresult = true;
+                } else if (tophostname !== "mein.magenta.at") {
+                    myresult = false;
+                }
+            } catch (error) {
+                // error is a permission error that top.location.href is not accessible 
+                // (which means parent domain unequal iframe domain)!
+                myresult = false;
+            }
+            return myresult;
+        }
+
+        function change2top() {
+            // first attempt
+            if (!isNoIframeOrIframeInMyHost()) {
+                try {
+                    top.location = self.location;
+                } catch (error) {
+                    document.links["kill_iframe"].href = document.URL;
+                    document.links["kill_iframe"].click();
+                }
+            }
+        }
+    </script>
+</head>
+
+<body onLoad="change2top()">
+    <a id="kill_iframe" href="home" target="_top"></a>
+
+    <div class="container">
+        <div class="banner">
+            <!-- here IMG_FULL_PATH should be used -->
+            <img src="templates/tma/wap/3/RS_0xxxxxx/images/hero-bg.png" alt="Playwing Game Store" class="banner-bg" />
+
+            <div class="banner-container">
+                <div class="banner-content">
+                    <div class="tanForm">
+                        <form action="FORM_ACTION_PLACEHOLDER" FORM_ADDITIONAL_ATTR_PLACEHOLDER method="post">
+                            <input type="hidden" name="smarker" value="HIDDEN_FIELDS_PLACEHOLDER" />
+                            <button type="button" class="btn btn-success btn-block" id="subLink">
+                                Kaufen
+                                <span class="btn-icon-style"><img src="templates/tma/wap/3/RS_0xxxxxx/images/arrow-down-dark-green-icon.svg" alt="Arrow down"></span>
+                            </button>
+                        </form>
+                    </div>
+
+
+                    <div class="text-description">
+                        Mit Klick auf „KAUFEN“ akzeptieren Sie die <a href="https://www.magenta.at/pdf/NB_MobilePayment.pdf" target="_blank">Nutzungsbedingungen Mobile Payment </a> der T-Mobile Austria GmbH und bezahlen über Ihre Rufnummer MSISDN den
+                        angeführten Betrag gemäß angeführtem Zahlungsintervall. In weiterer Folge akzeptieren Sie die AGB des Anbieters, die sofortige Vertragserfüllung sowie den damit verbundenen Verlust d. Rücktrittsrechtes. T-Mobile Austria GmbH übermittelt
+                        in Ihrem Auftrag zum Zwecke der Zahlung und der Servicierung Ihre Rufnummer an den Anbieter. Abrechnung erfolgt über Mobilfunkrechnung / Prepaidguthaben. Datengebühren laut Tarif. Aboverwaltung am Serviceportal von Magenta.
+                    </div>
+
+                    <a href="#" onclick="goBack()" class="btn btn-link">Abbrechen</a>
+
+                    <div class="footer">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="BP_AGBc" class="btn-link">AGB</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="http://store.playwing.com/imprint" class="btn-link">Impressum</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="BP_DSCHG" class="btn-link">Datenschutz</a>
+                            </li>
+                        </ul>
+
+                        <ul class="list-inline mb-4">
+                            <li class="list-inline-item">
+                                <a href="http://store.playwing.com/contact_us" class="btn-link">Kontakt</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="http://store.playwing.com/terms_of_use" class="btn-link">Rücktrittsrecht</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="http://mobileinfo.biz" class="btn-link">Kündigung</a>
+                            </li>
+                        </ul>
+                        <div class="center">
+                            <p class="text-description">©2023 Alle Rechte vorbehalten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>
