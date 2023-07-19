@@ -24,8 +24,9 @@
 }
 
 body {
-    background-color: #EEEFF3;
+    background-color: #181420;
     font-family: 'Inter';
+    margin: 0;
 }
 
 h3 {
@@ -62,11 +63,12 @@ h3 {
     flex-direction: column;
     text-align: center;
     position: absolute;
+    padding: .5rem 1.125rem;
 }
 
 .banner-bg {
     width: 100%;
-    height: 100%;
+    object-fit: cover;
 }
 
 @media (min-width: 576px) {
@@ -89,6 +91,7 @@ h3 {
 
 .responsive-two-columns {
     display: flex;
+    padding: 0 1rem;
 }
 
 .responsive-two-columns>* {
@@ -98,11 +101,11 @@ h3 {
 }
 
 .responsive-two-columns .left {
-    width: 60%;
+    width: 67%;
 }
 
 .responsive-two-columns .right {
-    width: 40%;
+    width: 33%;
 }
 
 .btn {
@@ -110,12 +113,11 @@ h3 {
 }
 
 .btn-success {
-    font-weight: 600;
-    font-size: 1.25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
     color: #fff;
-    background: #00B262;
-    box-shadow: 0px 4px 4px #24CB80;
-    border-radius: .625rem;
+    background: #1DC5A7;
+    border-radius: .25rem;
     border: none;
     padding: 1.5rem;
     text-decoration: none;
@@ -132,7 +134,7 @@ h3 {
 .btn-icon-style {
     position: absolute;
     right: 0;
-    padding-right: 2.125rem;
+    padding-right: 5rem;
     top: 0;
     bottom: 0;
     display: flex;
@@ -187,7 +189,7 @@ h3 {
 .footer .list-inline .list-inline-item {
     list-style-type: none;
     padding: 0 12px;
-    border-right: 1px solid #464646;
+    border-right: 1px solid #A59B9B;
     padding-bottom: .25rem;
 }
 
@@ -202,7 +204,7 @@ h3 {
 .footer .list-inline .list-inline-item .btn-link {
     font-weight: normal;
     font-size: .75rem;
-    color: #838383;
+    color: #A59B9B;
 }
 
 .text-center {
